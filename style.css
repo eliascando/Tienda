@@ -1,0 +1,30 @@
+.titulo-pagina{
+    text-align: center;
+    margin: 30px;
+}
+.formulario{
+    width: 75%;
+    margin: 0 auto;
+}
+#agregar{
+    width: 100%;
+}
+#lista-productos h1{
+    text-align: center;
+}
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Agregamos esta línea para centrar horizontalmente */
+    margin-top: 20px;
+  }
+  
+  .buscar ion-icon {
+    margin-right: 10px;
+  }
+  
+  .buscar input {
+    width: 73%;
+    padding: 8px;
+    font-size: 16px;
+  }

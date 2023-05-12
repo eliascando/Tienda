@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mt-5 formulario">
+        <h1 class="titulo-pagina">Agregar nuevo producto</h1>
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="descripcion" placeholder="Ingrese descripcion">
+          </div>
+          <div class="form-group">
+            <input type="number" step="0.01" class="form-control" id="precio" placeholder="Ingrese precio">
+          </div>
+          <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="buscar">
+      <i><ion-icon name="search-outline"></ion-icon></i>
+      <input type="text" id="buscarProducto" placeholder="Buscar producto por nombre">
+    </div>
+
+    <div class="container mt-5" id="lista-productos">
+    <h1>Lista de productos</h1>
+    <table class="table mt-3" dir="ltr">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descripcion</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody id="productosTable">
+        <!--Items añadidos por js-->
+      </tbody>
+    </table>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
